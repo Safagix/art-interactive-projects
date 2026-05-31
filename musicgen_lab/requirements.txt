@@ -1,0 +1,17 @@
+av
+einops
+flashy>=0.0.1
+hydra-core
+hydra_colorlog
+julius
+librosa
+num2words
+numpy
+sentencepiece
+spacy
+torch
+torchaudio
+torchdiffeq
+torchmetrics
+transformers
+tqdm

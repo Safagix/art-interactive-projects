@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs and generated caches
+build/
+dist/
+.next/
+.cache/
+.tmp/
+.od/
+.vaunt/
+__pycache__/
+*.pyc
+*.pyo
+target/
+
+# Local runtime data and secrets
+.env
+.env.*
+*.log
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Local IDE / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Generated/editor cache
+**/.godot/
+
+# Local binary dependencies and omitted project files
+musicgen_lab/ffmpeg/
+TouchDesigner_Projects/
+
+# Packaged/exported artifacts
+*.apk
+*.apk.idsig
+*.exe
+*.zip

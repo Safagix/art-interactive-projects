@@ -1,0 +1,39 @@
+[gd_scene load_steps=11 format=3 uid="uid://b1aajsnd78f6a"]
+
+[ext_resource type="Script" uid="uid://cvji0csrfyyru" path="res://scripts/StarlightNetwork.gd" id="2_starlight"]
+[ext_resource type="Script" uid="uid://ye81n46wc4sa" path="res://scripts/HandCursor.gd" id="3_cursor"]
+[ext_resource type="Shader" uid="uid://bxnsxvucajw11" path="res://shaders/StarlightHoloShader.gdshader" id="4_shader"]
+[ext_resource type="Script" uid="uid://du2m5o24u7aoo" path="res://scripts/StarlightVision.gd" id="5_vision"]
+[ext_resource type="Script" path="res://scripts/VR_Bootstrap.gd" id="6_vr_boot"]
+[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="7_icon"]
+
+[sub_resource type="Environment" id="Environment_dwuen"]
+background_mode = 1
+background_color = Color(1, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial_hand"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_video"]
+size = Vector2(16, 9)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_starlight"]
+render_priority = 0
+shader = ExtResource("4_shader")
+shader_parameter/holo_color = Color(0, 1, 1, 0.6)
+shader_parameter/fresnel_power = 2.5
+shader_parameter/passthrough_tex = ExtResource("7_icon")
+
+[sub_resource type="BoxMesh" id="BoxMesh_holo"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="InteractiveCube" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = SubResource("BoxMesh_holo")
+surface_material_override/0 = SubResource("StandardMaterial_hand")
+script = ExtResource("3_cursor")
+smoothing = 0.4
+depth_factor = 10.0
+
+[connection signal="hand_updated" from="StarlightNetwork" to="InteractiveCube" method="_on_starlight_network_hand_updated"]

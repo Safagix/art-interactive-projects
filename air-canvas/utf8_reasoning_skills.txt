@@ -1,0 +1,28 @@
+﻿
+[38;5;250m███████╗██╗  ██╗██╗██╗     ██╗     ███████╗[0m
+[38;5;248m██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝[0m
+[38;5;245m███████╗█████╔╝ ██║██║     ██║     ███████╗[0m
+[38;5;243m╚════██║██╔═██╗ ██║██║     ██║     ╚════██║[0m
+[38;5;240m███████║██║  ██╗██║███████╗███████╗███████║[0m
+[38;5;238m╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝[0m
+
+[38;5;102mInstall with[0m npx skills add <owner/repo@skill>
+
+[38;5;145mdavila7/claude-code-templates@nowait-reasoning-optimizer[0m [36m128 installs[0m
+[38;5;102m└ https://skills.sh/davila7/claude-code-templates/nowait-reasoning-optimizer[0m
+
+[38;5;145mparcadei/continuous-claude-v3@recall-reasoning[0m [36m48 installs[0m
+[38;5;102m└ https://skills.sh/parcadei/continuous-claude-v3/recall-reasoning[0m
+
+[38;5;145mneolabhq/context-engineering-kit@thought-based-reasoning[0m [36m42 installs[0m
+[38;5;102m└ https://skills.sh/neolabhq/context-engineering-kit/thought-based-reasoning[0m
+
+[38;5;145msammcj/agentic-coding@critical-thinking-logical-reasoning[0m [36m40 installs[0m
+[38;5;102m└ https://skills.sh/sammcj/agentic-coding/critical-thinking-logical-reasoning[0m
+
+[38;5;145m89jobrien/steve@meta-cognitive-reasoning[0m [36m32 installs[0m
+[38;5;102m└ https://skills.sh/89jobrien/steve/meta-cognitive-reasoning[0m
+
+[38;5;145mruvnet/claude-flow@reasoningbank with agentdb[0m [36m31 installs[0m
+[38;5;102m└ https://skills.sh/ruvnet/claude-flow/reasoningbank-with-agentdb[0m
+
